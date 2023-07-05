@@ -1,12 +1,30 @@
 # ML model for prediction of COVID-19 cases
 
-This project employs machine learning algorithms to build predictive models. The models should be able to predict positive COVID-19 cases using symptoms.
+Machine learning models are built to predict positive COVID-19 cases from patient symptoms. The performance of the models on a relatively smaller dataset demonstrated merit in building a mobile application that could aid in rapid diagnoses and tracking of positive COVID-19 cases.
 
 ## Data
 
-A csv file with columns of symptoms and COVID-19 status is used to train the model. The COVID-19 status column is the target and the symptom columns are the features.
+A CSV file retrieved from Kaggle is used to train the model.
+Features:
+* age
+* fever
+* cough
+* runny nose
+* pneumonia
+* lung infection
+* travel history
+* **test results**
 
 ## Training
+### Models
+* Logistic Regression
+* Random Forest
+* K Nearest Neighbor
+* Decision Tree
+* Support Vector Classifier
 
-Logistic Regression and Random Forest algorithms are used to train the predictive model on the dataset. The models are then saved as pickle files and can be used for predictions
+## Results
+* Logistic Regression was the best-performing model with an accuracy score of 91%
+
+
 
